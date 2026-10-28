@@ -31,29 +31,30 @@ ocm-bounce-oloid-framework/
 
 ## Core Analytical Scripts
 
-1. **`ocm_bounce_pressure.py`**
-   Numerically simulates the "Magnetic Piston" effect ($P_{\text{total}} = P_{\text{grav}} + P_{\kappa}$), demonstrating how repulsive negentropy flux overtakes gravitational collapse near the inner $R_d$ limit to prevent a singularity.
+1. **`ocm_bounce_pressure.py`**  
+   Numerically simulates the "Magnetic Piston" effect ($P_{total} = P_{grav} + P_{\kappa}$), demonstrating how repulsive negentropy flux overtakes gravitational collapse near the inner $R_d$ limit to prevent a singularity.
 
-2. **`ocm_entropy_reset.py`**
-   Models universal entropy dynamics, contrasting standard closed-system $\Lambda$CDM Heat Death against the OCM open-system framework featuring periodic "Laminar Resets" driven by negentropy flux ($\Phi_N$).
+2. **`ocm_entropy_reset.py`**  
+   Models universal entropy dynamics, contrasting standard closed-system Lambda-CDM Heat Death against the OCM open-system framework featuring periodic "Laminar Resets" driven by negentropy flux ($\Phi_N$).
 
-3. **`ocm_hubble_gradient.py`**
+3. **`ocm_hubble_gradient.py`**  
    Calculates the radial expansion rate $H(r)$ using an $n=3$ power-law gradient, bridging the early-universe CMB baseline ($67.4$) to late-universe local measurements ($73.0$).
 
-4. **`ocm_temporal_divergence.py`**
+4. **`ocm_temporal_divergence.py`**  
    Projects the evolutionary divergence between the fossilized laminar core and turbulent local drift, illustrating the asymptotic saturation toward the manifold viscosity terminal limit ($H_T \approx 82.0$).
 
-5. **`ocm_anisotropy_tensor.py`**
-   Simulates the angular variance of the metric correction tensor $\Theta_{\mu\nu}(\theta, \phi)$ driven by Gauss-Bonnet spine curvature distribution, reproducing low-multipole alignments (Axis of Evil).
+5. **`ocm_anisotropy_tensor.py`**  
+   Simulates the angular variance of the metric correction tensor $\Theta$ driven by Gauss-Bonnet spine curvature distribution, reproducing low-multipole alignments (Axis of Evil).
 
-6. **`ocm_topological_torque.py`**
-   Evaluates macroscopic topological torque ($\tau_{\text{topo}}$) and computes the hemispherical fractional excess parameter ($A$) of spiral galaxy spin orientations.
+6. **`ocm_topological_torque.py`**  
+   Evaluates macroscopic topological torque ($\tau$) and computes the hemispherical fractional excess parameter ($A$) of spiral galaxy spin orientations.
 
-7. **`ocm_terminal_velocity_viscosity.py`**
-   Models how manifold drag ($\eta_m$) regulates cosmic bulk flows, forcing structural velocities to saturate at a predictable terminal velocity ($v_T \approx 600\text{ km/s}$) across vast spatial scales.
+7. **`ocm_terminal_velocity_viscosity.py`**  
+   Models how manifold drag ($\eta$) regulates cosmic bulk flows, forcing structural velocities to saturate at a predictable terminal velocity ($v_T \approx 600$ km/s) across vast spatial scales.
 
 ## Supplementary Video Suite
 All 19 master HD 1080p 60fps cinematic assets (covering Oloid coalescence, ER-bridge micro-bounces, acoustic resonance, and Euclid topological astigmatism predictions) are hosted under GitHub Releases for direct reviewer access.
 
 ## License
 Distributed under the MIT License. See LICENSE for more information.
+
