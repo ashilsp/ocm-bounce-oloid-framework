@@ -13,35 +13,34 @@ Instead of an initial singularity or closed-system heat death, the OCM framework
 
 ---
 
+
 ## Repository Structure
 
-```text
 ocm-bounce-oloid-framework/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 └── scripts/
-    ├── ocm_bounce_pressure.py              # Magnetic Piston pressure balance model
-    ├── ocm_entropy_reset.py                # Open-system entropy reset & Phi_N flux simulation
-    ├── ocm_hubble_gradient.py              # Radial Hubble tension gradient (n=3 power-law)
-    ├── ocm_temporal_divergence.py          # Temporal divergence & terminal 82.0 limit projection
-    ├── ocm_anisotropy_tensor.py            # Oloid metric anisotropy tensor & spine alignment
-    ├── ocm_topological_torque.py           # Topological torque & galactic chirality excess model
-    └── ocm_terminal_velocity_viscosity.py  # Manifold viscosity & bulk flow terminal velocity equilibrium
+    ├── ocm_bounce_pressure.py                  # Core: Magnetic Piston pressure balance
+    ├── ocm_entropy_reset.py                    # Core: Open-system entropy reset & Phi_N flux
+    ├── ocm_hubble_gradient.py                  # Core: Radial Hubble tension gradient (n=3)
+    └── ... [All 29 modular verification scripts]
+
+---
 
 ## Core Analytical Scripts
 
 1. **`ocm_bounce_pressure.py`**  
-   Numerically simulates the "Magnetic Piston" effect ($P_{total} = P_{grav} + P_{\kappa}$), demonstrating how repulsive negentropy flux overtakes gravitational collapse near the inner $R_d$ limit to prevent a singularity.
+   Numerically simulates the "Magnetic Piston" effect ($P_{\text{total}} = P_{\text{grav}} + P_{\kappa}$), demonstrating how repulsive negentropy flux overtakes gravitational collapse near the inner $R_d$ limit to prevent a singularity.
 
 2. **`ocm_entropy_reset.py`**  
-   Models universal entropy dynamics, contrasting standard closed-system Lambda-CDM Heat Death against the OCM open-system framework featuring periodic "Laminar Resets" driven by negentropy flux ($\Phi_N$).
+   Models universal entropy dynamics, contrasting standard closed-system $\Lambda$CDM Heat Death against the OCM open-system framework featuring periodic "Laminar Resets" driven by negentropy flux ($\Phi_N$).
 
 3. **`ocm_hubble_gradient.py`**  
    Calculates the radial expansion rate $H(r)$ using an $n=3$ power-law gradient, bridging the early-universe CMB baseline ($67.4$) to late-universe local measurements ($73.0$).
 
 4. **`ocm_temporal_divergence.py`**  
-   Projects the evolutionary divergence between the fossilized laminar core and turbulent local drift, illustrating the asymptotic saturation toward the manifold viscosity terminal limit ($H_T \approx 82.0$).
+   Projects the evolutionary divergence between the fossilized laminar core and turbulent local drift, illustrating asymptotic saturation toward the manifold viscosity terminal limit ($H_T \approx 82.0$).
 
 5. **`ocm_anisotropy_tensor.py`**  
    Simulates the angular variance of the metric correction tensor $\Theta$ driven by Gauss-Bonnet spine curvature distribution, reproducing low-multipole alignments (Axis of Evil).
@@ -52,9 +51,44 @@ ocm-bounce-oloid-framework/
 7. **`ocm_terminal_velocity_viscosity.py`**  
    Models how manifold drag ($\eta$) regulates cosmic bulk flows, forcing structural velocities to saturate at a predictable terminal velocity ($v_T \approx 600$ km/s) across vast spatial scales.
 
+---
+
+## Supplementary Information (SI) Verification Scripts
+
+Each script below corresponds directly to a rigorous mathematical derivation in the Supplementary Information document:
+
+* **`ocm_magnetic_piston_bounce.py`** (SI Sec. 1): Fluid-dynamic $r^{-6}$ repulsive pressure crossover.
+* **`ocm_vorticity_flux_conversion.py`** (SI Sec. 3–4): Lagrangian $L \to \kappa$ conversion and Navier-Stokes vorticity transport.
+* **`ocm_prigogine_entropy.py`** (SI Sec. 5): Prigogine open-system entropy balance and dissipation modeling.
+* **`ocm_node_maturation.py`** (SI Sec. 6): Sigmoidal $H(z)$ maturation profile ($z \approx 2$).
+* **`ocm_cosmic_cycle_lifespan.py`** (SI Sec. 8): Cosmic cycle lifespan scaling ($200\text{--}500$ Gyr).
+* **`ocm_grav_echoes_bmode_spectra.py`** (SI Sec. 9–10): Gravitational wave reflection echoes and LiteBIRD $C_\ell^{EB}$ cross-spectra.
+* **`ocm_modified_hellings_downs.py`** (SI Sec. 11): Modified Pulsar Timing Array Hellings-Downs spatial correlations.
+* **`ocm_quantum_tunneling_sgrb.py`** (SI Sec. 12): WKB quantum-topological tunneling cross-sections and hostless short Gamma-Ray Bursts.
+* **`ocm_oloid_geometry_gauss_bonnet.py`** (SI Sec. 13): Oloid differential geometry, developable $K=0$ facets, and Gauss-Bonnet boundary curvature ($\oint \kappa_g ds = 4\pi$).
+* **`ocm_tensor_transformation_theta.py`** (SI Sec. 14): Manifold Anisotropy Tensor $\Theta_{\mu\nu}$ coordinate transformations and FLRW metric coupling.
+* **`ocm_flux_saturation_curvature.py`** (SI Sec. 15): Oloid surface curvature mapping and the Flux Saturation Principle ($\rho_\kappa \propto \exp(\alpha |K|)$).
+* **`ocm_galactic_coordinate_transform.py`** (SI Sec. 16): Oloid surface parameterization mapping to Galactic coordinates $(l, b)$ and spherical harmonic power concentration.
+* **`ocm_viscous_vorticity_evolution.py`** (SI Sec. 17): Relativistic viscous vorticity anti-decay proof ($a^{-2}$ dilution counteraction).
+* **`ocm_nodal_phase_locking.py`** (SI Sec. 18): Standing wave phase-locking ($\Delta \phi = n\pi/2$) across perpendicular convex hulls.
+* **`ocm_offdiagonal_covariance_axis.py`** (SI Sec. 19): Off-diagonal cross-power covariance matrix modeling for the Axis of Evil.
+* **`ocm_topological_torque_winding.py`** (SI Sec. 20): Macroscopic topological torque and protogalactic chiral spin winding.
+* **`ocm_vacuum_drag_force.py`** (SI Sec. 21): Relativistic Navier-Stokes vacuum drag and the geometric force $F_{\kappa}$.
+* **`ocm_terminal_node_velocity.py`** (SI Sec. 22): Steady-state force balance and 3D vector field drainage convergence ($v_T \approx 600$ km/s).
+* **`ocm_tow_cable_bridge.py`** (SI Sec. 23): $\kappa$-Flux tow-cable bridge effective potential and deterministic galaxy collisions.
+* **`ocm_oloid_membrane_pta_strain.py`** (SI Sec. 24): Oloid elastic membrane acoustic resonance and narrowband PTA strain spectra.
+* **`ocm_cosmic_drum_spectral_flattening.py`** (SI Sec. 25): Cosmic drum acoustic eigenmodes and $\gamma \to 5$ spectral index flattening.
+* **`ocm_galactic_catalog_chirality_pipeline.py`** (SI Sec. 26): SDSS/Galaxy Zoo statistical pipeline and Fractional Excess Parameter ($A$) extraction.
+* **`ocm_euclid_topological_shear.py`** (SI Sec. 27): Euclid cosmic shear decomposition, topological astigmatism ($\gamma_{\text{topological}}$), and B-mode separation ($C_\ell^{BB}$).
+* **`ocm_anisotropic_eos_w.py`** (SI Sec. 28): Coordinate-dependent anisotropic dark energy equation of state $w(z, \theta, \phi)$.
+* **`ocm_topological_vorticity_lens_spectra.py`** (SI Sec. 29): Topological vorticity tensor derivation ($\vec{\Omega}_{\text{topological}}$) and E/B-mode lensing projections.
+
+---
+
 ## Supplementary Video Suite
-All 19 master HD 1080p 60fps cinematic assets (covering Oloid coalescence, ER-bridge micro-bounces, acoustic resonance, and Euclid topological astigmatism predictions) are hosted under GitHub Releases for direct reviewer access.
+All master HD 1080p 60fps cinematic assets (covering Oloid coalescence, ER-bridge micro-bounces, acoustic resonance, and Euclid topological astigmatism predictions) are hosted under **GitHub Releases** for direct reviewer access.
 
 ## License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
+
 
