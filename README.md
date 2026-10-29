@@ -13,16 +13,15 @@ Instead of an initial singularity or closed-system heat death, the OCM framework
 
 ---
 
-## Repository Structure
 ocm-bounce-oloid-framework/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 └── scripts/
-    ├── ocm_bounce_pressure.py                  # Core: Magnetic Piston pressure balance
-    ├── ocm_entropy_reset.py                    # Core: Open-system entropy reset & Phi_N flux
-    ├── ocm_hubble_gradient.py                  # Core: Radial Hubble tension gradient (n=3)
-    └── ... [All 29 modular verification scripts]
+    ├── ocm_bounce_pressure.py       # Core: Magnetic Piston pressure balance
+    ├── ocm_entropy_reset.py         # Core: Open-system entropy reset & Phi_N flux
+    ├── ocm_hubble_gradient.py       # Core: Radial Hubble tension gradient (n=3)
+    └── ... (All 29 modular verification scripts)
 
 
 ---
