@@ -13,6 +13,8 @@ Instead of an initial singularity or closed-system heat death, the OCM framework
 
 ---
 
+## Repository Structure 
+```text`
 ocm-bounce-oloid-framework/
 ├── README.md
 ├── LICENSE
